@@ -1,4 +1,4 @@
-console.log(desconto(100, false, false));
+console.log(desconto(100, true, true));
 function desconto(compra, cartao, convenio) {
   let desconto = 0;
   let descontoPreco = 0;
