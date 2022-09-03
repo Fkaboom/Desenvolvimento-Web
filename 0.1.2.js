@@ -1,7 +1,7 @@
-console.log(desconto(100, true, true));
+console.log(desconto(100, false, false));
 function desconto(compra, cartao, convenio) {
   let desconto = 0;
-  let decontoPreco = null;
+  let descontoPreco = 0;
   if (cartao && convenio) {
     descontoPreco = compra * (desconto + 0.15);
   } else if (cartao || convenio) {
