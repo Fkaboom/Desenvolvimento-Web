@@ -18,7 +18,7 @@ function desconto(compra, cartao, convenio, primeiraCompra) {
 
   console.log('----------------------------------------------------');
   console.log('Desconto:');
-  console.log(descontoPreco);
+  console.log(descontoPreco.toFixed(0));
   console.log('____________________________________________________');
   console.log('Valor com desconto:');
   return compra - descontoPreco;
