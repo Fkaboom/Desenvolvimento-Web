@@ -5,13 +5,13 @@ function desconto(compra, cartao, convenio, primeiraCompra) {
     novoUsuario = 0.05;
     novo = false;
   }
+  descontoPreco = compra * novoUsuario;
   if (cartao && convenio) {
     descontoPreco = compra * (0.15 + novoUsuario);
   } else if (cartao || convenio) {
     descontoPreco = compra * (0.1 + novoUsuario);
-  } else {
-    descontoPreco = compra * novoUsuario;
   }
+
   if (descontoPreco > 100) {
     descontoPreco = 100;
   }
@@ -24,6 +24,4 @@ function desconto(compra, cartao, convenio, primeiraCompra) {
   return compra - descontoPreco;
 }
 
-console.log(desconto(100000, true, true, true));
-console.log(desconto(100, true, true, true));
-console.log(desconto(100, true, true, false));
+console.log(desconto(100, true, false, true));
