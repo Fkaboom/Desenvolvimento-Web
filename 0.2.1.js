@@ -18,7 +18,7 @@ const filme2 = {
 }
 
 const filme3 = {
-  nome = 'Wall-e',
+  nome : 'Wall-e',
   anoLancamento:2008,
   diretor:'Andrew Stanton',
   premios: 'Oscar de Melhor Filme de Animação',
