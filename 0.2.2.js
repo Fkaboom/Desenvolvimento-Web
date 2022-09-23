@@ -7,15 +7,26 @@ const usuario = {
 };
 
 const comentarios = {
-  usuario: ['NotZé', 'Gabriel_M@tador', 'Paulin', 'Aninha_kawai', 'Felipe0889'],
-  comentarios: [
-    'Blog incrivel, ASS: Não é o zé',
-    'Me siga de volta',
-    'Blog falido',
-    'Blog feio',
-    'Conheci antes da fama',
-    'legal',
-  ],
+  Notzé: {
+    id: 0,
+    comentarios: 'Blog incrivel, ASS: Não é o zé',
+  },
+  Gabriel_Matador: {
+    id: 1,
+    comentarios: 'Me siga de volta',
+  },
+  Paulin: {
+    id: 2,
+    comentarios: ['Blog falido', 'Blog feio'],
+  },
+  Aninha_kawai: {
+    id: 3,
+    comentarios: 'Conheci antes da fama',
+  },
+  Felipe0889: {
+    id: 4,
+    comentarios: 'legal',
+  },
 };
 console.log(usuario.apelido);
 console.log(usuario.dataNascimento);
