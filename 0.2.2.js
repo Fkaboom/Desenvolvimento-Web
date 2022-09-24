@@ -28,7 +28,5 @@ const comentarios = {
     comentarios: 'legal',
   },
 };
-console.log(usuario.apelido);
-console.log(usuario.dataNascimento);
-console.log(comentarios.usuario[0]);
-console.log(comentarios.comentarios[0]);
+
+console.log(comentarios.Felipe0889.comentarios);
