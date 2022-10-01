@@ -23,12 +23,10 @@ function listarTarefasConcluidasMenos30() {
 }
 
 function listarTarefasConcluidas() {
-  return tarefas;
-  tarefas.filter((tarefa) => tarefa.concluida);
+  return tarefas.filter((tarefa) => tarefa.concluida);
 }
 function listarQuantidadeTarefasNaoConcluidas() {
-  return tarefas;
-  tarefas.filter((tarefa) => !tarefa.concluida).length;
+  return tarefas.filter((tarefa) => !tarefa.concluida).length;
 }
 
 console.log(listarTarefasConcluidas());
