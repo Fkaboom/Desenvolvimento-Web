@@ -16,14 +16,22 @@ const tarefas = [
   },
 ];
 
-const tarefasFinalizadas = tarefas.filter((tarefa) => tarefa.concluida);
+function listarTarefasConcluidasMenos30() {
+  return tarefas
+    .filter((tarefa) => tarefa.concluida)
+    .filter((tarefa) => tarefa.dias < 30);
+}
 
-const tarefasNaoFinalizadas = tarefas.filter(
-  (tarefa) => tarefa.concluida === false
-).length;
+function listarTarefasConcluidas() {
+  return tarefas;
+  tarefas.filter((tarefa) => tarefa.concluida);
+}
+function listarQuantidadeTarefasNaoConcluidas() {
+  return tarefas;
+  tarefas.filter((tarefa) => !tarefa.concluida).length;
+}
 
-const tarefasMenos30 = tarefas.filter((tarefa) => tarefa.dias < 30);
+console.log(listarTarefasConcluidas());
+console.log(listarQuantidadeTarefasNaoConcluidas());
 
-console.log(tarefasFinalizadas);
-console.log(tarefasNaoFinalizadas);
-console.log(tarefasMenos30);
+console.log(listarTarefasConcluidasMenos30());
