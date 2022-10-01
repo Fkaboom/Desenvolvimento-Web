@@ -16,9 +16,7 @@ const tarefas = [
   },
 ];
 
-const tarefasFinalizadas = tarefas.filter(
-  (tarefa) => tarefa.concluida === true
-);
+const tarefasFinalizadas = tarefas.filter((tarefa) => tarefa.concluida);
 
 const tarefasNaoFinalizadas = tarefas.filter(
   (tarefa) => tarefa.concluida === false
