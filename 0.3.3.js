@@ -16,7 +16,7 @@ const medicos = [
   },
 ];
 
-const generoMedicos = medicos.forEach((tratamento) => {
+medicos.forEach((tratamento) => {
   if (tratamento.genero === 'masculino') {
     console.log('Dr ' + tratamento.nome + ' ' + tratamento.sobrenome);
   } else if (tratamento.genero === 'feminino') {
@@ -25,5 +25,3 @@ const generoMedicos = medicos.forEach((tratamento) => {
     console.log('Dr(e) ' + tratamento.nome + ' ' + tratamento.sobrenome);
   }
 });
-
-console.log(generoMedicos);
