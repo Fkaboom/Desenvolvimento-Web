@@ -26,7 +26,7 @@ const resultado = filmes.map((filme) => {
 });
 console.log(resultado);
 
-let id = 0;
+let id = 1;
 
 const contador = filmes.map((filme) => {
   let idDoFilme = id;
