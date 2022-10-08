@@ -29,12 +29,12 @@ console.log(resultado);
 let id = 0;
 
 const contador = filmes.map((filme) => {
-  let idFilme = id;
+  let idDoFilme = id;
   id++;
   return {
     titulo: filme.nome,
     lancamento: filme.lancamento,
-    idFilme,
+    idDoFilme,
   };
 });
 console.log(contador);
