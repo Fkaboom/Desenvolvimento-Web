@@ -26,15 +26,14 @@ const resultado = filmes.map((filme) => {
 });
 console.log(resultado);
 
-let id = 1;
+let id = 0;
 
 const contador = filmes.map((filme) => {
-  let idDoFilme = id;
   id++;
   return {
     titulo: filme.nome,
     lancamento: filme.lancamento,
-    idDoFilme,
+    id,
   };
 });
 console.log(contador);
