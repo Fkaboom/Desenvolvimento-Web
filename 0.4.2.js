@@ -19,13 +19,16 @@ const alunos = [
       { cadeira: 'DW2', nota: 10 },
       { cadeira: 'BD2', nota: 10 },
     ],
-  }
+  },
 ];
-const somaTotal = notas.reduce((acc,_nota) =>{
-  const{nota} = _nota;
-  return acc+ nota;
 
-},0);
+const pegarNota = alunos.map((aluno) => {
+  const nota = aluno.notas;
+  const somaTotal = nota.reduce((acc, _nota) => {
+    const { nota } = _nota;
+    return acc + nota;
+  });
+  return somaTotal;
+});
 
-const mediaGeral = somaTotal/ notas.length;
-console.log(mediaGeral); 
+console.log(pegarNota);
