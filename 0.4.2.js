@@ -22,12 +22,13 @@ const alunos = [
   },
 ];
 
-const pegarNota = alunos.map((aluno) => {
+const media = alunos.map((aluno) => {
   const somaTotal = aluno.notas.reduce((acc, _nota) => {
     const { nota } = _nota;
     return acc + nota;
-  });
-  return somaTotal;
+  }, 0);
+
+  return aluno.nome + (aluno.mediaGeral = somaTotal / aluno.notas.length);
 });
 
-console.log(pegarNota);
+console.log(media);
