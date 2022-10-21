@@ -23,8 +23,7 @@ const alunos = [
 ];
 
 const pegarNota = alunos.map((aluno) => {
-  const nota = aluno.notas;
-  const somaTotal = nota.reduce((acc, _nota) => {
+  const somaTotal = aluno.notas.reduce((acc, _nota) => {
     const { nota } = _nota;
     return acc + nota;
   });
