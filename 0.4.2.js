@@ -23,11 +23,11 @@ const alunos = [
 ];
 
 const media = alunos.map((aluno) => {
-  const somaTotal = aluno.notas.reduce((acc, _nota) => {
-    const { nota } = _nota;
-    return acc + nota;
-  }, 0);
-  aluno.mediaGeral = somaTotal / aluno.notas.length;
+  aluno.mediaGeral =
+    aluno.notas.reduce((acc, _nota) => {
+      const { nota } = _nota;
+      return acc + nota;
+    }, 0) / aluno.notas.length;
   return aluno;
 });
 
