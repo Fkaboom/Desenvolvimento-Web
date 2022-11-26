@@ -29,7 +29,7 @@ const Personagens = (props) => {
 }
 
 export default function App() {
-  const [show,setShow] = React.useState('all');
+  const [show,setShow] = React.useState('Todos');
 
   const handleOnClick = (value) => setShow(value);
 
